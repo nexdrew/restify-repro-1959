@@ -1,6 +1,6 @@
 ## Intro
 
-This repo contains code to demonstrate how restify can crash the Node process when the normal `restify.pre.sanitizePath()` is used and an unexpected request is received by the server.
+This repo contains code to demonstrate how restify can crash the Node process when the normal `restify.pre.sanitizePath()` is used and an unexpected request is received by the server, as described in [restify issue 1959](https://github.com/restify/node-restify/issues/1959).
 
 ## Setup
 
@@ -11,7 +11,7 @@ To test this repo locally, please do the following:
 
 ## Reproduce Error
 
-To reproduce the crash/error, do the following:
+To reproduce the error/crash, do the following:
 
 1. Run the "normal" server via `node server.js`
 2. Send an expected request and get back a "hello" response:
